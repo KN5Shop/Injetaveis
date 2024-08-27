@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -36,7 +36,7 @@ a:hover {
 }
 
 .logo {
-    max-height: 50px; /* Ajuste a altura da imagem conforme necessário */
+    max-height: 60px;
 }
 
 .header-main nav ul {
@@ -53,11 +53,16 @@ a:hover {
 .header-main nav ul li a {
     color: white;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-main nav ul li a:hover {
+    color: #f0932b;
 }
 
 /* Seção Hero */
 .hero {
-    background-color: #000; /* Cor de fundo alterada para preto */
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
@@ -65,12 +70,12 @@ a:hover {
 }
 
 .hero h1 {
-    font-size: 32px;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 
@@ -81,6 +86,12 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #d87c1f;
 }
 
 /* Seção Produtos */
@@ -100,8 +111,8 @@ a:hover {
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .produto img {
@@ -111,7 +122,7 @@ a:hover {
 
 .produto h3 {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .produto p {
@@ -122,12 +133,13 @@ a:hover {
 .produto .preco {
     font-weight: bold;
     color: #f0932b;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /* Efeito ao passar o mouse */
 .produto:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Seção Sobre */
@@ -138,7 +150,7 @@ a:hover {
 }
 
 .sobre h2 {
-    font-size: 28px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -150,7 +162,7 @@ a:hover {
 }
 
 .contato h2 {
-    font-size: 28px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -161,6 +173,12 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d87c1f;
 }
 
 /* Rodapé */
