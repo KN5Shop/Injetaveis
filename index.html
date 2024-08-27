@@ -3,205 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Loja de Suplementos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .banner {
-            background-color: #666;
-            height: 300px;
-            color: white;
-            text-align: center;
-            padding-top: 100px;
-            font-size: 2.5em;
-            background: linear-gradient(to bottom right, #333, #666);
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .categories, .top-products, .testimonials, .blog {
-            margin-bottom: 40px;
-        }
-        .categories img, .top-products img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-        }
-        .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .grid-item {
-            flex: 1;
-            min-width: 250px;
-            max-width: 300px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .grid-item:hover {
-            transform: translateY(-5px);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
-        }
-        footer a {
-            color: #ffdd00;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: #ffffff;
-        }
-    </style>
+    <title>Suplementos Online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1>Sua Loja de Suplementos</h1>
-</header>
-
-<nav>
-    <a href="#">Início</a>
-    <a href="#">Injetáveis</a>
-    <a href="#">Orais</a>
-    <a href="#">Suplementos</a>
-    <a href="#">Contato</a>
-</nav>
-
-<div class="banner">
-    Transforme seu Potencial - Suplementos para o Máximo Desempenho
-</div>
-
-<div class="container">
-
-    <section class="categories">
-        <h2>Categorias em Destaque</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Injetáveis">
-                <h3>Injetáveis</h3>
-                <a href="#">Ver Todos</a>
-            </div>
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Orais">
-                <h3>Orais</h3>
-                <a href="#">Ver Todos</a>
-            </div>
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Suplementos">
-                <h3>Suplementos</h3>
-                <a href="#">Ver Todos</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="top-products">
-        <h2>Top 23 Produtos</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Enantato de Testosterona">
+    <header>
+        <img src="imagens/imagens1.png" alt="Saúde & Nutrição Gold Suplementos" class="logo">
+        <h1>Bem-vindo à Loja de Suplementos Online</h1>
+    </header>
+    <main>
+        <section class="produtos">
+            <h2>Top 23 Produtos</h2>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Enantato de Testosterona">
                 <h3>Enantato de Testosterona</h3>
-                <p>R$ 100,00</p>
-                <a href="#">Comprar Agora</a>
+                <p>Utilizado amplamente para ganho de massa muscular.</p>
+                <p class="preco">R$115,00</p>
             </div>
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Cipionato de Testosterona">
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Cipionato de Testosterona">
                 <h3>Cipionato de Testosterona</h3>
-                <p>R$ 120,00</p>
-                <a href="#">Comprar Agora</a>
+                <p>Similar ao enantato, popular por sua eficácia e disponibilidade.</p>
+                <p class="preco">R$115,00</p>
             </div>
-            <!-- Continue adicionando os produtos aqui -->
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Power Honey (unidade)">
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Durateston">
+                <h3>Durateston</h3>
+                <p>Um mix de diferentes ésteres de testosterona, garantindo efeitos rápidos e duradouros.</p>
+                <p class="preco">R$125,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Propionato de Testosterona">
+                <h3>Propionato de Testosterona</h3>
+                <p>Ação rápida, ideal para ciclos curtos e fases de finalização.</p>
+                <p class="preco">R$115,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Deca-Durabolin (Deca)">
+                <h3>Deca-Durabolin (Deca)</h3>
+                <p>Famoso por promover ganho de massa muscular e força, com menor retenção de água.</p>
+                <p class="preco">R$125,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Boldenona">
+                <h3>Boldenona</h3>
+                <p>Preferida em ciclos de ganho de massa magra devido aos seus efeitos duradouros.</p>
+                <p class="preco">R$125,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Acetato de Trembolona">
+                <h3>Acetato de Trembolona</h3>
+                <p>Potente anabolizante, muito usado para ganhos de massa seca e cutting.</p>
+                <p class="preco">R$125,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Enantato de Trembolona">
+                <h3>Enantato de Trembolona</h3>
+                <p>Variante de trembolona com ação prolongada, popular em ciclos de ganho de massa.</p>
+                <p class="preco">R$140,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Hexahidrobenzilcarbonato de Trembolona">
+                <h3>Hexahidrobenzilcarbonato de Trembolona</h3>
+                <p>Conhecida por efeitos fortes e duradouros em termos de ganho muscular.</p>
+                <p class="preco">R$140,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Masteron">
+                <h3>Masteron</h3>
+                <p>Usado em fases de cutting para ajudar na definição muscular sem retenção de água.</p>
+                <p class="preco">R$125,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Primobolan">
+                <h3>Primobolan</h3>
+                <p>Popular em ciclos de cutting, por promover massa magra com pouca retenção hídrica.</p>
+                <p class="preco">R$165,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="CutStack">
+                <h3>CutStack</h3>
+                <p>Um blend de testosterona, trembolona e masteron, ideal para cutting.</p>
+                <p class="preco">R$145,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="CutStack Plus+">
+                <h3>CutStack Plus+</h3>
+                <p>Versão aprimorada do CutStack com primobolan e hexatrembo.</p>
+                <p class="preco">R$165,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="BulkStack">
+                <h3>BulkStack</h3>
+                <p>Combinação de cipionato, deca e boldenona, focado em ganho de massa.</p>
+                <p class="preco">R$165,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Stanozolol Oleoso">
+                <h3>Stanozolol Oleoso</h3>
+                <p>Utilizado para melhorar a definição muscular e força, muito usado em cutting.</p>
+                <p class="preco">R$115,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Dianabol Injetável">
+                <h3>Dianabol Injetável</h3>
+                <p>Conhecido por promover ganhos rápidos de massa muscular.</p>
+                <p class="preco">R$115,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Oximetolona Injetável">
+                <h3>Oximetolona Injetável</h3>
+                <p>Famoso por proporcionar grandes ganhos de força e massa muscular.</p>
+                <p class="preco">R$115,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Stanozolol Aquoso">
+                <h3>Stanozolol Aquoso</h3>
+                <p>Variante aquosa de Stanozolol, usada para definição e força.</p>
+                <p class="preco">R$150,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Trembolona Tri">
+                <h3>Trembolona Tri</h3>
+                <p>Uma versão que combina diferentes formas de trembolona, conhecida por resultados rápidos e significativos.</p>
+                <p class="preco">R$175,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Proprianato de Testosterona">
+                <h3>Proprianato de Testosterona</h3>
+                <p>Versão com ação mais curta, usada para ciclos de cutting e finalização de ciclos.</p>
+                <p class="preco">R$115,00</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Power Honey (unidade)">
                 <h3>Power Honey (unidade)</h3>
-                <p>R$ 30,00</p>
-                <a href="#">Comprar Agora</a>
+                <p>Suplemento energizante e de performance, vendido em unidade.</p>
+                <p class="preco">R$30,00</p>
             </div>
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Power Honey (Caixa c/ 12 unidades)">
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Power Honey (Caixa c/ 12 unidades)">
                 <h3>Power Honey (Caixa c/ 12 unidades)</h3>
-                <p>R$ 190,00</p>
-                <a href="#">Comprar Agora</a>
+                <p>Versão em caixa, popular entre atletas que buscam mais energia e desempenho.</p>
+                <p class="preco">R$190,00</p>
             </div>
-            <div class="grid-item">
-                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Tadalafila diário (Cialis)">
+            <div class="produto">
+                <img src="imagens/imagens1.png" alt="Tadalafila diário (Cialis)">
                 <h3>Tadalafila diário (Cialis)</h3>
-                <p>R$ 75,00</p>
-                <a href="#">Comprar Agora</a>
+                <p>Utilizado para melhorar a função erétil e circulação, muito procurado por seu efeito prolongado.</p>
+                <p class="preco">R$75,00</p>
             </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>Depoimentos</h2>
-        <p>"Os melhores produtos que já usei! Resultados incríveis!" - João P.</p>
-        <p>"Entrega rápida e atendimento excelente." - Maria S.</p>
-    </section>
-
-    <section class="blog">
-        <h2>Artigos e Dicas</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h3>Uso Seguro de Suplementos</h3>
-                <p>Descubra como usar suplementos de forma segura e eficaz...</p>
-                <a href="#">Leia Mais</a>
-            </div>
-            <div class="grid-item">
-                <h3>Dicas de Treino</h3>
-                <p>Maximize seus ganhos com essas dicas essenciais de treino...</p>
-                <a href="#">Leia Mais</a>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-<footer>
-    <p>&copy; 2024 Sua Loja de Suplementos. Todos os direitos reservados.</p>
-    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-</footer>
-
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Loja de Suplementos. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
