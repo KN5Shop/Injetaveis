@@ -1,131 +1,125 @@
-/* style.css */
-
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico para garantir consistência */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
     color: #333;
-    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-/* Header styles */
+/* Estilos do cabeçalho */
 header {
-    background-color: #333;
+    background: #000;
     color: #fff;
 }
 
 .top-bar {
-    background-color: #444;
-    padding: 10px 0;
-}
-
-.top-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.top-bar-text {
-    margin: 0;
+    background: #e74c3c; /* Vermelho */
+    padding: 10px 20px;
+    text-align: center;
     font-size: 14px;
+    font-weight: bold;
 }
 
-.contact-info {
+.top-bar .contact-info {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.contact-link {
-    color: #fff;
-    text-decoration: none;
+.top-bar .phone,
+.top-bar .email {
+    display: block;
+    margin: 5px 0;
 }
 
 .header-main {
-    background-color: #555;
-    padding: 20px 0;
-}
-
-.header-main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
+    background: #111;
 }
 
-.logo img {
-    height: 50px;
+.header-main .logo {
+    max-height: 60px;
 }
 
-nav ul {
+.header-main nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    gap: 20px;
 }
 
-nav a {
+.header-main nav ul li {
+    margin-left: 20px;
+}
+
+.header-main nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-}
-
-.header-actions {
-    display: flex;
-    gap: 15px;
-}
-
-.action-button {
-    color: #fff;
-    text-decoration: none;
-    background-color: #f39c12;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 5px;
 }
 
-/* Hero section styles */
+.header-main nav ul li a:hover {
+    background: #e74c3c; /* Vermelho */
+}
+
 .hero {
-    background: url('imagens/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
+    background: #e74c3c; /* Vermelho */
     color: #fff;
-    padding: 100px 0;
     text-align: center;
+    padding: 40px 20px;
 }
 
 .hero h1 {
-    margin: 0;
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .cta-button {
-    display: inline-block;
+    background: #fff;
+    color: #e74c3c; /* Vermelho */
     padding: 10px 20px;
-    background-color: #f39c12;
-    color: #fff;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 16px;
 }
 
-/* Products section styles */
+.cta-button:hover {
+    background: #e74c3c; /* Vermelho */
+    color: #fff;
+}
+
+/* Estilos principais */
+main {
+    padding: 20px;
+}
+
 .produtos {
-    padding: 40px 0;
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .section-title {
-    text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .produto-grid {
@@ -135,68 +129,64 @@ nav a {
 }
 
 .produto {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #f9f9f9;
     padding: 15px;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .produto img {
     max-width: 100%;
     height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
-.preco {
+.produto h3 {
     font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+.produto .preco {
+    font-size: 20px;
     font-weight: bold;
-    color: #f39c12;
+    color: #e74c3c; /* Vermelho */
 }
 
-/* About and Contact sections */
-.sobre, .contato {
-    background-color: #f8f8f8;
-    padding: 40px 0;
+/* Estilos da seção Sobre Nós */
+.sobre {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.sobre p, .contato p {
-    margin: 0;
-    font-size: 16px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+/* Estilos da seção Contato */
+.contato {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-footer p {
-    margin: 0;
+.contato a.cta-button {
+    margin-top: 10px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .header-main .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    .header-actions {
-        flex-direction: column;
-    }
-
-    .action-button {
-        margin-bottom: 10px;
-    }
+/* Estilos do rodapé */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
