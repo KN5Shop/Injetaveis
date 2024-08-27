@@ -3,10 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suplementos Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sua Loja de Suplementos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .banner {
+            background-color: #666;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            font-size: 2.5em;
+            background: linear-gradient(to bottom right, #333, #666);
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .categories, .top-products, .testimonials, .blog {
+            margin-bottom: 40px;
+        }
+        .categories img, .top-products img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .grid-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ffdd00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
+<<<<<<< HEAD
     <header>
         <img src="imagens/imagens1.png" alt="Saúde & Nutrição Gold Suplementos" class="logo">
         <div class="header-content">
@@ -19,16 +110,64 @@
             <h2 class="section-title">Nossos 23 Produtos Mais Vendidos</h2>
             <div class="produto">
                 <img src="imagens/imagens1.png" alt="Enantato de Testosterona">
+=======
+
+<header>
+    <h1>Sua Loja de Suplementos</h1>
+</header>
+
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Injetáveis</a>
+    <a href="#">Orais</a>
+    <a href="#">Suplementos</a>
+    <a href="#">Contato</a>
+</nav>
+
+<div class="banner">
+    Transforme seu Potencial - Suplementos para o Máximo Desempenho
+</div>
+
+<div class="container">
+
+    <section class="categories">
+        <h2>Categorias em Destaque</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Injetáveis">
+                <h3>Injetáveis</h3>
+                <a href="#">Ver Todos</a>
+            </div>
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Orais">
+                <h3>Orais</h3>
+                <a href="#">Ver Todos</a>
+            </div>
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Suplementos">
+                <h3>Suplementos</h3>
+                <a href="#">Ver Todos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-products">
+        <h2>Top 23 Produtos</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Enantato de Testosterona">
+>>>>>>> parent of 27041ef (Atualização layout e imagens)
                 <h3>Enantato de Testosterona</h3>
-                <p>Utilizado amplamente para ganho de massa muscular.</p>
-                <p class="preco">R$115,00</p>
+                <p>R$ 100,00</p>
+                <a href="#">Comprar Agora</a>
             </div>
-            <div class="produto">
-                <img src="imagens/imagens1.png" alt="Cipionato de Testosterona">
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Cipionato de Testosterona">
                 <h3>Cipionato de Testosterona</h3>
-                <p>Similar ao enantato, popular por sua eficácia e disponibilidade.</p>
-                <p class="preco">R$115,00</p>
+                <p>R$ 120,00</p>
+                <a href="#">Comprar Agora</a>
             </div>
+<<<<<<< HEAD
             <div class="produto">
                 <img src="imagens/imagens1.png" alt="Durateston">
                 <h3>Durateston</h3>
@@ -38,26 +177,58 @@
             <!-- Continue com os outros produtos... -->
             <div class="produto">
                 <img src="imagens/imagens1.png" alt="Power Honey (unidade)">
+=======
+            <!-- Continue adicionando os produtos aqui -->
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Power Honey (unidade)">
+>>>>>>> parent of 27041ef (Atualização layout e imagens)
                 <h3>Power Honey (unidade)</h3>
-                <p>Suplemento energizante e de performance, vendido em unidade.</p>
-                <p class="preco">R$30,00</p>
+                <p>R$ 30,00</p>
+                <a href="#">Comprar Agora</a>
             </div>
-            <div class="produto">
-                <img src="imagens/imagens1.png" alt="Power Honey (Caixa c/ 12 unidades)">
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Power Honey (Caixa c/ 12 unidades)">
                 <h3>Power Honey (Caixa c/ 12 unidades)</h3>
-                <p>Versão em caixa, popular entre atletas que buscam mais energia e desempenho.</p>
-                <p class="preco">R$190,00</p>
+                <p>R$ 190,00</p>
+                <a href="#">Comprar Agora</a>
             </div>
-            <div class="produto">
-                <img src="imagens/imagens1.png" alt="Tadalafila diário (Cialis)">
+            <div class="grid-item">
+                <img src="https://www.wedologos.com.br/projeto-de-design/14442/logo-saude-nutricao-gold-suplementos" alt="Tadalafila diário (Cialis)">
                 <h3>Tadalafila diário (Cialis)</h3>
-                <p>Utilizado para melhorar a função erétil e circulação, muito procurado por seu efeito prolongado.</p>
-                <p class="preco">R$75,00</p>
+                <p>R$ 75,00</p>
+                <a href="#">Comprar Agora</a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Loja de Suplementos. Todos os direitos reservados.</p>
-    </footer>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Depoimentos</h2>
+        <p>"Os melhores produtos que já usei! Resultados incríveis!" - João P.</p>
+        <p>"Entrega rápida e atendimento excelente." - Maria S.</p>
+    </section>
+
+    <section class="blog">
+        <h2>Artigos e Dicas</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Uso Seguro de Suplementos</h3>
+                <p>Descubra como usar suplementos de forma segura e eficaz...</p>
+                <a href="#">Leia Mais</a>
+            </div>
+            <div class="grid-item">
+                <h3>Dicas de Treino</h3>
+                <p>Maximize seus ganhos com essas dicas essenciais de treino...</p>
+                <a href="#">Leia Mais</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Sua Loja de Suplementos. Todos os direitos reservados.</p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+</footer>
+
 </body>
 </html>
