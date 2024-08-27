@@ -1,70 +1,66 @@
-/* Reset básico */
-body, h1, h2, h3, p, ul, li, nav, a, img {
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Definição de fontes */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f8f8f8;
     color: #333;
 }
 
-/* Cabeçalhos */
-header .top-bar {
-    background-color: #000;
-    color: #fff;
-    padding: 5px 0;
+a {
+    color: #f0932b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #f0932b;
+    color: white;
+    padding: 10px;
     text-align: center;
     font-size: 14px;
 }
 
-header .top-bar-text {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-family: 'Oswald', sans-serif; /* Escolha uma fonte bonita */
-}
-
+/* Cabeçalho Principal */
 .header-main {
-    background-color: #fff;
-    padding: 10px 20px;
+    background-color: #000;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #ddd;
+    padding: 20px;
 }
 
-.header-main .logo {
-    max-width: 150px;
+.logo {
+    max-height: 50px; /* Ajuste a altura da imagem conforme necessário */
 }
 
-nav ul {
+.header-main nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+.header-main nav ul li {
     margin-left: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+.header-main nav ul li a {
+    color: white;
     font-weight: bold;
 }
 
 /* Seção Hero */
 .hero {
-    background-color: #444;
+    background-color: #000; /* Cor de fundo alterada para preto */
     color: #fff;
     text-align: center;
     padding: 40px 20px;
-    background-image: url('imagens/imagens1.png'); /* Exemplo de imagem de fundo */
-    background-size: cover;
-    background-position: center;
     margin-bottom: 20px;
 }
 
@@ -87,76 +83,80 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Produtos */
+/* Seção Produtos */
 .produtos {
-    padding: 20px;
-    text-align: center;
-}
-
-.produtos .section-title {
-    font-size: 28px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
 }
 
 .produto-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .produto {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .produto img {
-    max-width: 100px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .produto h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 .produto p {
-    font-size: 16px;
-    color: #777;
+    margin: 10px 0;
+    color: #555;
 }
 
 .produto .preco {
-    font-size: 20px;
-    color: #e74c3c;
     font-weight: bold;
+    color: #f0932b;
+    font-size: 18px;
 }
 
-/* Seções Sobre e Contato */
-.sobre, .contato {
-    padding: 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Efeito ao passar o mouse */
+.produto:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
-.sobre h2, .contato h2 {
-    font-size: 24px;
+.sobre h2 {
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.contato p {
-    font-size: 18px;
+/* Seção Contato */
+.contato {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.contato .cta-button {
+.cta-button {
     background-color: #f0932b;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -165,9 +165,9 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #000;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     font-size: 14px;
 }
