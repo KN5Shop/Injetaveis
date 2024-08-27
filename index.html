@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suplementos Online</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .top-bar {
+            background-color: #222;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0a500;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,138 +85,7 @@
                     <p>Ganho de massa muscular.</p>
                     <p class="preco">R$115,00</p>
                 </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Cipionato de Testosterona">
-                    <h3>Cipionato de Testosterona</h3>
-                    <p>Eficaz e disponível.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Durateston">
-                    <h3>Durateston</h3>
-                    <p>Efeitos rápidos e duradouros.</p>
-                    <p class="preco">R$125,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Propionato de Testosterona">
-                    <h3>Propionato de Testosterona</h3>
-                    <p>Ação rápida.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Deca-Durabolin (Deca)">
-                    <h3>Deca-Durabolin (Deca)</h3>
-                    <p>Ganho de massa muscular.</p>
-                    <p class="preco">R$125,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Boldenona">
-                    <h3>Boldenona</h3>
-                    <p>Ganho de massa magra.</p>
-                    <p class="preco">R$125,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Acetato de Trembolona">
-                    <h3>Acetato de Trembolona</h3>
-                    <p>Ganho de massa seca.</p>
-                    <p class="preco">R$125,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Enantato de Trembolona">
-                    <h3>Enantato de Trembolona</h3>
-                    <p>Ação prolongada.</p>
-                    <p class="preco">R$140,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Hexahidrobenzilcarbonato de Trembolona">
-                    <h3>Hexahidrobenzilcarbonato de Trembolona</h3>
-                    <p>Ganho muscular forte.</p>
-                    <p class="preco">R$140,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Masteron">
-                    <h3>Masteron</h3>
-                    <p>Definição muscular.</p>
-                    <p class="preco">R$125,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Primobolan">
-                    <h3>Primobolan</h3>
-                    <p>Massa magra.</p>
-                    <p class="preco">R$165,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="CutStack">
-                    <h3>CutStack</h3>
-                    <p>Ideal para cutting.</p>
-                    <p class="preco">R$145,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="CutStack Plus+">
-                    <h3>CutStack Plus+</h3>
-                    <p>Aprimorado para cutting.</p>
-                    <p class="preco">R$165,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="BulkStack">
-                    <h3>BulkStack</h3>
-                    <p>Ganho de massa.</p>
-                    <p class="preco">R$165,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Stanozolol Oleoso">
-                    <h3>Stanozolol Oleoso</h3>
-                    <p>Definição e força.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Dianabol Injetável">
-                    <h3>Dianabol Injetável</h3>
-                    <p>Ganho rápido de massa.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Oximetolona Injetável">
-                    <h3>Oximetolona Injetável</h3>
-                    <p>Ganho de força e massa.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Stanozolol Aquoso">
-                    <h3>Stanozolol Aquoso</h3>
-                    <p>Definição e força.</p>
-                    <p class="preco">R$150,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Trembolona Tri">
-                    <h3>Trembolona Tri</h3>
-                    <p>Resultados rápidos.</p>
-                    <p class="preco">R$175,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Proprianato de Testosterona">
-                    <h3>Proprianato de Testosterona</h3>
-                    <p>Ação curta para cutting.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Power Honey (unidade)">
-                    <h3>Power Honey (unidade)</h3>
-                    <p>Suplemento energizante.</p>
-                    <p class="preco">R$30,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Power Honey (cx 24)">
-                    <h3>Power Honey (cx 24)</h3>
-                    <p>Caixa com 24 unidades.</p>
-                    <p class="preco">R$300,00</p>
-                </article>
-                <article class="produto">
-                    <img src="imagens/imagens1.png" alt="Mix Testo (blend 3)">
-                    <h3>Mix Testo (blend 3)</h3>
-                    <p>Mistura de testosterona.</p>
-                    <p class="preco">R$115,00</p>
-                </article>
+                <!-- Adicione aqui os outros produtos -->
             </div>
         </section>
         <section id="sobre" class="sobre">
