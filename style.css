@@ -162,6 +162,7 @@ nav a:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contato .container {
     max-width: 800px;
     margin: 0 auto;
@@ -170,6 +171,8 @@ nav a:hover {
     margin-top: -1cm; /* Move a seção de contato 1cm para cima */
 }
 
+=======
+>>>>>>> parent of f3292ae (Update style.css)
 .sobre h2, .contato h2 {
     margin-bottom: 20px;
     font-size: 1.8em;
