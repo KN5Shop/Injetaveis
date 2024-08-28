@@ -166,6 +166,31 @@ nav a:hover {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+.sobre p, .contato p {
+    font-size: 1em;
+}
+
+/* Ajuste para a seção de contato */
+.contato {
+    padding: 20px;
+    background-color: #f4f4f4; /* Cinza claro */
+    margin-top: -1cm; /* Move a seção de contato 1cm para cima */
+    text-align: center;
+}
+
+/* Ajuste para o texto de contato */
+.contato p {
+    margin-top: -2mm; /* Move o texto 2mm para cima */
+}
+
+.contato .contact-info {
+    margin-top: -2mm; /* Move as informações de contato 2mm para cima */
+}
+
+/* Estilo do rodapé */
+>>>>>>> parent of 06e0148 (Update style.css)
 footer {
     background: #333;
     color: #fff;
