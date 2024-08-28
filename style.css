@@ -194,8 +194,9 @@ main {
     margin-top: -2mm; /* Move o texto 2mm para cima */
 }
 
+/* Adicionar espaço abaixo do email */
 .contato .contact-info {
-    margin-top: -2mm; /* Move as informações de contato 2mm para cima */
+    margin-bottom: 2cm; /* Espaço de 2cm abaixo das informações de contato */
 }
 
 /* Estilo do rodapé */
