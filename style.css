@@ -171,6 +171,10 @@ main {
     text-align: center;
 }
 
+.contato {
+    margin-top: -1cm; /* Move a seção de contato 1cm para cima */
+}
+
 .sobre h2, .contato h2 {
     margin-bottom: 20px;
     font-size: 1.8em;
