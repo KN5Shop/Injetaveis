@@ -166,13 +166,13 @@ nav ul li a:hover {
 .contato {
     padding: 20px;
     background-color: #f4f4f4; /* Cinza claro */
-    margin-top: -1cm; /* Move a seção de contato 1cm para cima */
+    margin-top: 20px; /* Removido o ajuste negativo */
     text-align: center;
 }
 
 /* Ajuste para o texto de contato */
 .contato p {
-    margin-top: -2mm; /* Move o texto 2mm para cima */
+    margin-top: 0; /* Removido ajuste negativo */
 }
 
 /* Adicionar espaço abaixo do email */
