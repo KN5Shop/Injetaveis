@@ -1,224 +1,212 @@
-/* Reset básico */
+/* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-    background: #000;
+    background-color: #333;
     color: #fff;
+    padding: 10px 0;
 }
 
 .top-bar {
-    background: #f00;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #222;
 }
 
 .top-bar-text {
-    margin: 0;
     font-size: 16px;
 }
 
 .contact-info {
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.contact-info span {
-    display: block;
+.phone,
+.email {
+    font-size: 14px;
 }
 
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .logo {
-    max-width: 200px;
+    width: 150px;
+    height: auto;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #f00;
+nav a:hover {
+    color: #e74c3c;
 }
 
 .hero {
-    background: url('imagens/hero-bg.jpg') no-repeat center center/cover;
+    background-color: #444;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .cta-button {
-    background: #f00;
+    background-color: #e74c3c;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    display: inline-block;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background: #c00;
-    transform: scale(1.05);
+    background-color: #c0392b;
 }
 
-main {
-    padding: 20px;
-}
-
+/* Produtos */
 .produtos {
-    background: #f9f9f9;
     padding: 20px;
+    background-color: #fff;
 }
 
 .section-title {
-    text-align: center;
+    font-size: 28px;
     margin-bottom: 20px;
-    font-size: 2em;
-    color: #333;
+    text-align: center;
 }
 
 .produto-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
 .produto {
-    background: #fff;
+    background-color: #f9f9f9;
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .produto img {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 .produto h3 {
-    font-size: 1.2em;
-    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .produto p {
-    margin: 0 10px;
+    margin-bottom: 10px;
 }
 
-.preco {
-    color: #f00;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.produto label {
-    display: block;
-    margin: 10px;
+.produto .preco {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 10px;
 }
 
 .produto select {
-    margin: 10px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .produto a {
-    display: block;
-    text-align: center;
-    margin: 10px;
-}
-
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Animações e Transições */
-.produto:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Estilo do rodapé com informações de contato */
-footer {
-    background: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer .contact-info {
+    display: inline-block;
     margin-top: 10px;
-    font-size: 14px;
 }
 
-footer .contact-info span {
-    display: block;
-    margin-bottom: 5px;
+/* Transição e animação dos produtos */
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Seções */
+.sobre, .contato {
+    padding: 20px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.sobre p, .contato p {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .header-main {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    nav ul {
-        flex-direction: column;
+    .header-main nav {
         margin-top: 10px;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .produto-grid {
+        grid-template-columns: 1fr;
     }
 }
