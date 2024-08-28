@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* Reset básico para garantir consistência entre navegadores */
+=======
+/* Reset básico */
+>>>>>>> parent of 33c6057 (Update style.css)
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +14,14 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+<<<<<<< HEAD
     background-color: #f4f4f4;
+=======
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
-/* Cabeçalho */
 header {
+<<<<<<< HEAD
     background: #333;
     color: #fff;
     padding: 1rem;
@@ -25,11 +32,21 @@ header {
     background: #000;
     padding: 0.5rem;
     color: #fff;
+=======
+    background: #000;
+    color: #fff;
+}
+
+.top-bar {
+    background: #f00;
+    padding: 10px;
+>>>>>>> parent of 33c6057 (Update style.css)
     text-align: center;
 }
 
 .top-bar-text {
     margin: 0;
+<<<<<<< HEAD
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -37,19 +54,33 @@ header {
 .contact-info {
     margin-top: 0.5rem;
     font-size: 0.9rem;
+=======
+    font-size: 16px;
+}
+
+.contact-info {
+    margin-top: 5px;
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
 .contact-info span {
     display: block;
+<<<<<<< HEAD
     margin: 0.2rem 0;
+=======
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
 .header-main {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     justify-content: space-between;
     padding: 1rem 2rem;
     background: #222;
+=======
+    padding: 20px;
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
 .logo {
@@ -59,12 +90,20 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+<<<<<<< HEAD
     gap: 1rem;
+=======
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
-nav a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
+<<<<<<< HEAD
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background 0.3s;
@@ -76,9 +115,22 @@ nav a:hover {
 
 .hero {
     background: #e74c3c;
+=======
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f00;
+}
+
+.hero {
+    background: url('imagens/hero-bg.jpg') no-repeat center center/cover;
+>>>>>>> parent of 33c6057 (Update style.css)
     color: #fff;
     padding: 2rem;
     text-align: center;
+<<<<<<< HEAD
 }
 
 .hero h1 {
@@ -109,16 +161,60 @@ nav a:hover {
 .produtos {
     padding: 2rem;
     background: #fff;
+=======
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #c00;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+}
+
+.produtos {
+    background: #f9f9f9;
+    padding: 20px;
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
 .section-title {
     text-align: center;
+<<<<<<< HEAD
     font-size: 2rem;
     margin-bottom: 1rem;
+=======
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+>>>>>>> parent of 33c6057 (Update style.css)
 }
 
 .produto-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
 }
@@ -194,4 +290,111 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+=======
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.produto p {
+    margin: 0 10px;
+}
+
+.preco {
+    color: #f00;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.produto label {
+    display: block;
+    margin: 10px;
+}
+
+.produto select {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.produto a {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animações e Transições */
+.produto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Estilo do rodapé com informações de contato */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .contact-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer .contact-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+>>>>>>> parent of 33c6057 (Update style.css)
 }
