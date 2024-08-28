@@ -178,7 +178,7 @@ nav ul li a:hover {
 
 /* Adicionar espaço abaixo do email */
 .contato .contact-info {
-    margin-bottom: 2cm; /* Espaço de 2cm abaixo das informações de contato */
+    margin-bottom: 1cm; /* Espaço de 1cm abaixo das informações de contato */
 }
 
 /* Estilo do rodapé */
@@ -220,7 +220,38 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .section-title {
+        font-size: 1.5em;
+    }
+
     footer {
         position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .produto h3 {
+        font-size: 1em;
+    }
+
+    .produto p {
+        font-size: 0.9em;
+    }
+
+    .preco {
+        font-size: 1em;
     }
 }
